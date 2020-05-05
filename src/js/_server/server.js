@@ -78,8 +78,7 @@ router
       clients.splice(index, 1);
       console.log(clients);
     }
-
-    // ctx.response.status = 204;
+    ctx.response.status = 204;
   });
 
 wsServer.on('connection', (ws, request) => {
